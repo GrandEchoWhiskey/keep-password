@@ -102,7 +102,11 @@ def charset(start = 33, end = 127, exc = "\"\\\'(),.[]`{}|~"):
     return sorted(set([chr(x+start) for x in range(end-start)]) - set(exc))
 
 if __name__ == '__main__':
-    x = password(charset())
-    x.print_best(8, 100)
+    import sys
+    if len(sys.argv) != 3:
+        print('Usage: python3 main.py <length> <iterations>')
+        sys.exit(1)
+    p = password(charset())
+    p.print_best(int(sys.argv[1]), int(sys.argv[2]))
 
     
