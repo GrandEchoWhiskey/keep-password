@@ -69,5 +69,11 @@ This program generates secure passwords based on the specified criteria, ensurin
 
 Clone this repository
 ```bash
-git clone https://github.com/GrandEchoWhiskey/keep-password
+git clone https://github.com/GrandEchoWhiskey/keep-password.git
+```
+or use the [GitHub Desktop](https://central.github.com/deployments/desktop/desktop/latest/win32) for Windows users.
+> It may be required to use git lfs for the databases
+Next using `Python 3` run `main.py`.
+```bash
+python main.py
 ```
