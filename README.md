@@ -64,3 +64,10 @@ The given program is a password generator that creates secure passwords based on
 - It calls the `print_best` method on the instance with arguments `8` and `100` to generate and print the best password.
 
 This program generates secure passwords based on the specified criteria, ensuring a mix of symbol types, an appropriate length, uniqueness, and absence from known password databases. The `print_best` method allows customization of the password length and the number of iterations to find the best password. Feel free to modify the program and explore different settings to generate passwords according to your requirements.
+
+## Getting started
+
+Clone this repository
+```bash
+git clone https://github.com/GrandEchoWhiskey/keep-password
+```
