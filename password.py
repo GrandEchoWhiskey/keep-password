@@ -7,11 +7,15 @@ class password:
         self.__database = list()
         self.__small = list()
 
-        with open('big_passwords.db', 'r') as f:
+        with open('big1_pwds.db', 'r') as f:
             for line in f:
                 self.__database.append(line.strip())
 
-        with open('small_passwords.db', 'r') as f:
+        with open('big2_pwds.db', 'r') as f:
+            for line in f:
+                self.__database.append(line.strip())
+
+        with open('small_pwds.db', 'r') as f:
             for line in f:
                 self.__small.append(line.strip())
 
