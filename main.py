@@ -88,6 +88,8 @@ class password:
         return (x, pwd)
     
     def print_best(self, length: int = 16, iters: int = 100) -> str:
+        if length <= 0: raise ValueError('Length must be greater than 0.')
+        if iters <= 0: raise ValueError('Iterations must be greater than 0.')
         __b = (-1.0, '')
         for _ in range(iters):
             __new = self.create_secure(length)
