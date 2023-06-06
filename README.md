@@ -76,5 +76,7 @@ or use the [GitHub Desktop](https://central.github.com/deployments/desktop/deskt
 
 Next using `Python 3` run `main.py`.
 ```bash
-python main.py
+python main.py <length> <iterations>
 ```
+> Length of the password should be at least 8. <br>
+> Iterations depend on the user requirements, the more iterations the better the output password can be.
